@@ -1,1 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
+      <link rel="icon" href="../Downloads/57d318b2c05b176a38299b1b455c755f.ico/favicon-96x96.png">
 
+    <title>SpaceX</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main-page{
+            display: flex;
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+            padding: 5px;
+
+        }
+        #logo{
+            width: 100px;
+            padding-top: 8px;
+            margin-right: 5px;
+            padding-left: 25px;
+        }
+        .nav{
+            padding-left: 10px;
+            padding-top: 30px;
+        }
+        .nav a{
+            padding: 10px;
+        }
+        
+        .main-page{
+            background-image: url("https://sxcontent9668.azureedge.us/cms-assets/assets/SES_18_19_presssite_DSC_2850_417e27436e.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-position: center top;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        .first{
+            position: fixed;
+        }
+        .side-nav{
+            padding-top: 30px;
+            padding-left: 110px;
+        }
+        .side-nav a{
+            padding: 6px;
+        }
+        .main-page a{
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+            
+        }
+        .text{
+            position: absolute;
+            top: 330px;
+            color: white;
+            padding-left: 100px;
+            text-align: left;
+        }
+        #rewatch{
+            width: 130px;
+            height: 35px;
+            background-color: transparent;
+            background-repeat:no-repeat;
+            border: 1.5px solid white;
+            cursor:pointer;
+            overflow: hidden; 
+            font-size: 12px;
+            color: white;
+        }
+        #rewatch{
+            margin-top: 20px;
+        }
+        #rewatch:hover{
+            background-color: white;
+            color: black;
+        }
+        .text p{
+            padding-bottom: 5px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 400;
+        }
+        .text h2{
+            font-weight: 4500;
+        }
+        .secondpage{
+            position: absolute;
+            top: 550px;
+            background-image: url("https://sxcontent9668.azureedge.us/cms-assets/assets/home_Starlink_2_8_Launch_230317_desktop_dsc00028_c6e9477498.JPG");
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-position: center top;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        .secondpage{
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+        }
+        .thirdpage{
+            position: absolute;
+            top: 1085px;
+            background-image: url("https://sxcontent9668.azureedge.us/cms-assets/assets/CRS_27_astronautrd_streak_desktop_90cbf7ea69.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-position: center top;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        .thirdpage{
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+        }
+        .fourthpage{
+            position: absolute;
+            top: 1620px;
+            background-image: url("https://sxcontent9668.azureedge.us/cms-assets/assets/Crew_5_Crew_Desktop_a8940419b8.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-position: center top;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        .fourthpage{
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+        }
+        .fifthpage{
+            position: absolute;
+            top: 2155px;
+            background-image: url("https://sxcontent9668.azureedge.us/cms-assets/assets/S20_Chopstick_Stack_Desktop_0c016b49ec.webp");
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-position: center top;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        .fifthpage{
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+        }
+        .sixthpage{
+            position: absolute;
+            top: 2690px;
+            background-image: url("https://sxcontent9668.azureedge.us/cms-assets/assets/Homepage_Desktop_5ebdeb0c6c.webp");
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-position: center top;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        .sixthpage{
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+        }
+        .footer{
+            position: absolute;
+            top: 3225px;
+            background-color: black;
+            width: 100%;
+            height: 60px;
+        }
+        .footer p{
+            color: gray;
+        }
+        .footer{
+            display: flex;
+            padding-top: 25px;
+            text-align: center;
+            justify-content: center;
+            font-size: 8px;
+        }
+        .footer a{
+            padding-left: 25px;
+            color: white;
+            text-decoration: none;
+        }
+        .logo, .nav, .side-nav{
+            position: fixed;
+            scroll-behavior: smooth;
+            overflow-y: scroll;
+            z-index: 1;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo{
+            padding-top: 0px;
+        }
+        .side-nav{
+            display: flex;
+            flex-direction: row;
+            padding-left: 900px;
+            padding-top: 20px;
+        }
+        .nav{
+            padding-left: 200px;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-page">
+        <div class="logo">
+            <img src="spacexlogo.jpeg" alt="" id="logo">
+        </div>
+        <div class="nav">
+            <a href="#">Falcon 9</a>
+            <a href="#">Falcon Heavy</a>
+            <a href="#">Dragon</a>
+            <a href="#">Starship</a>
+            <a href="#">Human Spaceflight</a>
+            <a href="#">Rideshare</a>
+            <a href="#">Starshield</a>
+            <a href="#">Starlink</a>
+        </div>
+        <div class="side-nav">
+            <a href="#">Shop</a>
+            <a href="#"><i class="fas fa-thin fa-bars"></i></a>
+        </div>
+
+        <div class="text">
+            <p id="p1">RECENT LAUNCH</p>
+            <h2>SES 18 AND SES 19 <br> MISSION</h2>
+            <button id="rewatch">REWATCH</button>
+        </div>
+        
+    </div>
+    <div class="secondpage">
+        <div class="text">
+            <p id="p1">RECENT LAUNCH</p>
+            <h2>STARLINK MISSION</h2>
+            <button id="rewatch">REWATCH</button>
+        </div>
+    </div>
+    <div class="thirdpage">
+        <div class="text">
+        <p id="p1">RECENT LAUNCH</p>
+        <h2>CRS-27 MISSION</h2>
+        <button id="rewatch">REWATCH</button>
+        </div>
+    </div>
+    <div class="fourthpage">
+        <div class="text">
+        <p id="p1">RECENT LAUNCH</p>
+        <h2>CREW-5 MISSION</h2>
+        <button id="rewatch">REWATCH</button>
+        </div>
+    </div>
+    <div class="fifthpage">
+        <div class="text">
+        
+        <h2>STARSHIP UPDATE</h2>
+        <button id="rewatch">LEARN MORE</button>
+        </div>
+    </div>
+    <div class="sixthpage">
+        <div class="text">
+        
+        <h2>STARSHIP SELECTED <br> BY NASA TO SUPPORT <br> SUSTAIN LUNAR <br> EXPLORATION</h2>
+        <button id="rewatch">LEARN MORE</button>
+        </div>
+    </div>
+    <div class="footer">
+        <p>SPACEX &copy; 2023</p>
+      <a href="">TWITTER</a>
+      <a href="">YOUTUBE</a>
+      <a href="">INSTAGRAM</a>
+      <a href="">FLICKR</a>
+      <a href="">LINKEDIN</a>
+      <a href="">PRIVACY POLICY</a>
+      <a href="">SUPPLIERS</a>
+    </div>
+    </div>
+    
+</body>
+</html>
